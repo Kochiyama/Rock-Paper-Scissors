@@ -1,0 +1,94 @@
+:root {
+  --clr-light: #ffffff;
+  --clr-med: #d7dfe2;
+  --clr-dark: #90a4ae;
+  --clr-dark-heavy: #546e7a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--clr-med);
+  color: var(--clr-dark)
+}
+
+.choices {
+  display: block;
+}
+
+.table {
+  padding: 1rem;
+  font-size: 1.45rem;
+  background-color: var(--clr-med);
+  transition: ease 500ms;
+}
+
+.table:hover {
+  color: var(--clr-dark-heavy);
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  box-shadow: 
+  -10px -10px 20px var(--clr-light),
+  10px 10px 20px var(--clr-dark);
+}
+
+.choices button{
+  padding: 1rem;
+  width: 100px;
+  border-radius: 1.5rem;
+  margin: 2rem;
+  background-color: var(--clr-med);
+  border: none;
+  outline: none;
+  color: var(--clr-dark);
+  transition: linear 200ms;
+}
+
+.choices button:hover {
+  color: var(--clr-light);
+  box-shadow: 
+  inset 3px 3px 6px var(--clr-dark);
+}
+
+.choices button:active {
+  transition: 0ms;
+  box-shadow: 
+  inset 7px 7px 14px var(--clr-dark);
+  color: var(--clr-med);
+}
+
+.plays {
+  display: none;
+  padding: 3rem;
+  box-shadow: 
+  -10px -10px 20px var(--clr-light),
+  10px 10px 20px var(--clr-dark);
+}
+
+.draw {
+  display: none;
+  padding: 2rem;
+  border-radius: 100px;
+  box-shadow: 
+  -5px -5px 10px var(--clr-light),
+  5px 5px 10px var(--clr-dark);
+}
+
+.winner-container {
+  display: none;
+  padding: 1rem;
+  box-shadow: 
+  -5px -5px 10px var(--clr-light),
+  5px 5px 10px var(--clr-dark);
+  font-size: 40px;
+  border-radius: 100px;
+}
+
+
+
