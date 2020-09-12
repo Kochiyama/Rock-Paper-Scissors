@@ -1,0 +1,10 @@
+player choose
+pc choose
+convert to verbal names
+show choices
+verify draw
+  if draw show draw 
+  reset
+verify winner
+  show winner
+reset
